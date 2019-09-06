@@ -1,0 +1,19 @@
+<div class="container-fluid">
+        <div class="bg-primary p-2 text-white">
+                Admin Placeholder
+            </div>
+        <div class="row mt-2">
+                <div class="col-3">
+                    <button class="btn btn-outline-info btn-block" routerLinkActive="active" routerLink = "/shop">Shop</button>
+
+                    <button class="btn btn-outline-info btn-block" routerLinkActive="active" routerLink = "/admin/main/products">Products</button>
+                    <button class="btn btn-outline-info btn-block" routerLinkActive="active" routerLink = "/admin/main/categories">Categories</button>
+                    <button class="btn btn-outline-info btn-block" routerLinkActive="active" routerLink = "/admin/main/orders">Orders</button>
+
+                    <button (click) = "logout()" class = "btn btn-outline btn-danger btn-block">Logout</button>
+                </div>
+                <div class="col-9">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+</div>
